@@ -27,7 +27,7 @@ function App() {
         {movies.map(function (movie, index) {
           return (
             <li key={index} className="movie-item">
-              <img src={movie.image} />
+              <img src={movie.image} alt={movie.name}/>
               <div className="movie-details">
                 <h1 className="movie-title">{movie.name}</h1>
                 <p className="movie-summary">{movie.summary}</p>
