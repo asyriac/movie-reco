@@ -1,3 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body,html {
+   margin: 0;
+   padding: 0;
+}
+* {
+   box-sizing: border-box;
+}
+
+
 .App {
   text-align: center;
 }
@@ -35,4 +46,66 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+body{
+   background-image: url('./image.jpg');
+   background-size: cover;
+   font-family: 'Montserrat', sans-serif;
+   color:white;
+   width: 70%;
+   margin: auto;
+   
+}
+
+.navbar{
+   display: flex;
+   justify-content: center;
+}
+
+.navbar li{
+   list-style-type: none;
+   padding: 1rem 2rem;
+   border: 1px solid yellow;
+   margin: 1rem;
+   cursor: pointer;
+}
+
+.movieList{
+   display: flex;
+   flex-direction: column;
+}
+
+.movieList li{
+   list-style-type: none;
+   border: 1px solid white;   
+   margin: 1rem;
+   height: 13rem;
+}
+
+li:hover{
+   background-color: #1F2937;
+}
+
+img{
+   width: 15%;
+}
+
+.movie-item{
+   display:flex;
+}
+
+.movie-details{
+   padding-left: 2rem;
+   text-align: left;
+}
+
+.movie-title{
+   margin-bottom:0;
+   padding-bottom: 0;
+}
+
+.movie-summary{
+   margin-top:0;
+   padding-top: 0;
 }
